@@ -1,11 +1,6 @@
 module KillBillClient
   module Version
-    MAJOR = 3
-    MINOR = 2
-    PATCH = 0
-    PRE = nil
-
-    VERSION = [MAJOR, MINOR, PATCH, PRE].compact.join('.').freeze
+    VERSION = '3.2.0'
 
     class << self
       def inspect
