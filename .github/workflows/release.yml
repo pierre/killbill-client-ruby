@@ -26,4 +26,5 @@ jobs:
           EOF
           chmod 0600 ~/.gem/credentials
 
+          bundle install
           bundle exec gem release
