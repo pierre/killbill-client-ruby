@@ -1,6 +1,6 @@
 module KillBillClient
   module Version
-    VERSION = '3.2.0'
+    VERSION = '3.2.1'
 
     class << self
       def inspect
