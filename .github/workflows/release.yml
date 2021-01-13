@@ -20,12 +20,10 @@ jobs:
           TOKEN: ${{ secrets.RUBYGEMS_API_KEY }}
         run: |
           mkdir -p ~/.gem
-
           cat << EOF > ~/.gem/credentials
----
-:rubygems_api_key: ${RUBYGEMS_API_KEY}
-EOF
-
+          ---
+          :rubygems_api_key: ${RUBYGEMS_API_KEY}
+          EOF
           chmod 0600 ~/.gem/credentials
 
           bundle exec gem release
